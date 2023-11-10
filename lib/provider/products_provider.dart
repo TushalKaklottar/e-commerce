@@ -16,4 +16,5 @@ class ProductProvider extends ChangeNotifier {
       print('Error fetching products: $e');
     }
   }
+
 }
