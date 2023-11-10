@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:re_exam_avd/provider/auth_provider.dart';
+import 'package:re_exam_avd/provider/products_provider.dart';
 import 'package:re_exam_avd/view/screen/login.dart';
 
 import 'firebase_options.dart';
@@ -22,6 +23,8 @@ void main() async {
           ChangeNotifierProvider(
               create: (context) => AuthProvider(),
           ),
+          ChangeNotifierProvider(
+              create: (context) => ProductProvider())
         ],
       child: const MyApp(),
     ),
